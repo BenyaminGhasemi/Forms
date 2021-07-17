@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+
+<form>
+<fieldset>
+  <legend>Login</legend>
+   <label for="user"> Username:</label>
+  <input id="user" type="text" name="user" minlength="5">
+  <label for="pwd"> Password:</label>
+  <input id="pwd" type="password" name="pwd" minlength="8"></fieldset>
+</form>
+
+<form>
+  <fieldset>
+    <legend>Address</legend>
+  <label for="location"> City:</label>
+  <input id="location" type="text" name="city" 
+  autofocus="on" required/>
+</form>
+<form>
+  <label for="zip"> Zipcode:</label>
+  <input id="zip" type="text" name="zipcode"
+  autofocus="on" minlength="5" maxlength="5" required/>
+  </fieldset>
+  </form>
+
+<form>
+  <h3>Favorite color</h3>
+  
+  <input name="color" type="radio" value="red">
+<label for="red">Red</label><br>
+
+<input name="color" type="radio" value="blue">
+<label for="blue">Blue</label><br>
+
+<input name="color" type="radio" value="green">
+<label for="green">Green</label><br>
+</form>
+<form>
+  <h3> Choose your skill:</h3>
+<input type="checkbox" id="user-research" name="user-research">
+<label for="user-research"> User Research</label><br>
+
+<input type="checkbox" id="interface-design" name="interface-design">
+<label for="interface-design">Interface Design</label><br>
+
+<input type="checkbox" id="usability" name="usability">
+<label for="usability">Usability</label>
+</form>
+
+<form>
+  <h3>Choose a Font</h3>
+  <select name="fonts" size="1">
+    <option value="arial">Arial</option>
+    <option value="times">Times New Roman</option>
+    <option value="comicsans">Comic Sans</option>
+        <option value="papyrus">Papyrus</option>
+    </select>
+</form>
+
+
+
+
+  <form>
+    <label for="form-message"> Message:</label>
+    <textarea id="form-message" type="text" name="message" autofocus="on" required maxlength="150"
+    placeholder="Write less than 150 words."></textarea>
+  </form>
+  <form>
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+  </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
